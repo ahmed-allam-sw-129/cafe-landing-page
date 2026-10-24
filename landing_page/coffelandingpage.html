@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقهى أريج | Areej Café</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/landing_page/coffelandingpage.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-mug-hot"></i> أريج <span>Café</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link">من نحن</a></li>
+                    <li><a href="#menu" class="nav-link">القائمة</a></li>
+                    <li><a href="#offers" class="nav-link">العروض</a></li>
+                    <li><a href="#gallery" class="nav-link">معرض الصور</a></li>
+                    <li><a href="#testimonials" class="nav-link">آراء العملاء</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">حجز طاولة</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="القائمة">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">أصالة القهوة المختصة</span>
+                <h1>تذوق الفخامة في كل قطرة قهوة</h1>
+                <p>نجمع بين أجود حبوب القهوة العالمية وأجواء الراحة والهدوء، لنقدم لك تجربة لا تُنسى في كل زيارة.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary">استكشف القائمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="#about" class="btn btn-outline">قصتنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container about-container">
+            <div class="about-img-box">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="إعداد القهوة" class="about-img main-img" loading="lazy">
+                <div class="about-experience">
+                    <span class="years">+10</span>
+                    <span class="text">سنوات من الخبرة</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-subtitle">من نحن</span>
+                <h2 class="section-title">شغفنا يقدم لك القهوة المثالية يومياً</h2>
+                <p class="about-desc">بدأت رحلتنا في "أريج كافيه" من حب عميق للقهوة الأصيلة. نحن نستورد أفضل المحاصيل المحمصة بعناية من مختلف أنحاء العالم، لتخوض معنا رحلة حسية فريدة تجدد طاقاتك يومياً.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-seedling"></i>
+                        <div>
+                            <h4>محاصيل محددة</h4>
+                            <p>حبوب قهوة مختارة من أفضل المزارع العالمية.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-award"></i>
+                        <div>
+                            <h4>خبراء الباريستا</h4>
+                            <p>فريق محترف مكرّس لإعداد كوبك المثالي.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section dark-bg" id="menu">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">قائمة الطعام والمشروبات</span>
+                <h2 class="section-title">اختر مشروبك أو وجبتك المفضلة</h2>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-filter="all">الكل</button>
+                <button class="tab-btn" data-filter="hot">مشروبات ساخنة</button>
+                <button class="tab-btn" data-filter="cold">مشروبات باردة</button>
+                <button class="tab-btn" data-filter="sweets">حلويات</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-card" data-category="hot">
+                    <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=500&q=80" alt="اسبريسو" class="menu-img" loading="lazy">
+                    <div class="menu-info">
+                        <div class="menu-head">
+                            <h3>اسبريسو سينجل</h3>
+                            <span class="price">15 ر.س</span>
+                        </div>
+                        <p>قهوة مركزة ذات قوام غني وطعم متوازن.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="menu-card" data-category="hot">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=500&q=80" alt="كابتشينو" class="menu-img" loading="lazy">
+                    <div class="menu-info">
+                        <div class="menu-head">
+                            <h3>كابتشينو كلاسيك</h3>
+                            <span class="price">22 ر.س</span>
+                        </div>
+                        <p>مزيج متناغم من الاسبريسو والحليب المبخر ورغوة كثيفة.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="menu-card" data-category="cold">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=500&q=80" alt="آيس سبانيش لاتيه" class="menu-img" loading="lazy">
+                    <div class="menu-info">
+                        <div class="menu-head">
+                            <h3>آيس سبانيش لاتيه</h3>
+                            <span class="price">26 ر.س</span>
+                        </div>
+                        <p>إسبريسو غني مع الحليب المكثف والثلج المنعش.</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="menu-card" data-category="sweets">
+                    <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=500&q=80" alt="كيكة التشيز كيك" class="menu-img" loading="lazy">
+                    <div class="menu-info">
+                        <div class="menu-head">
+                            <h3>تشيز كيك التوت</h3>
+                            <span class="price">28 ر.س</span>
+                        </div>
+                        <p>طبقة هشة من الكعك مع الكريمة الغنية وصوص التوت الطبيعي.</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="menu-card" data-category="cold">
+                    <img src="https://images.unsplash.com/photo-1553787499-6f9133860278?auto=format&fit=crop&w=500&q=80" alt="موهيتو أحمر" class="menu-img" loading="lazy">
+                    <div class="menu-info">
+                        <div class="menu-head">
+                            <h3>موهيتو الفراولة</h3>
+                            <span class="price">24 ر.س</span>
+                        </div>
+                        <p>مشروب منعش بالنعناع، الليمون والصودا مع الفراولة.</p>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="menu-card" data-category="sweets">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=500&q=80" alt="وافل بالشكولاتة" class="menu-img" loading="lazy">
+                    <div class="menu-info">
+                        <div class="menu-head">
+                            <h3>وافل الشوكولاتة</h3>
+                            <span class="price">30 ر.س</span>
+                        </div>
+                        <p>قطع الوافل الذهبية المغطاة بالشوكولاتة البلجيكية والمكسرات.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Offers -->
+    <section class="offers section" id="offers">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">عروض خاصة</span>
+                <h2 class="section-title">صفقات مميزة لا تفوتها</h2>
+            </div>
+
+            <div class="offers-grid">
+                <div class="offer-card primary-offer">
+                    <div class="offer-tag">عرض اليوم</div>
+                    <h3>عرض الإفطار الصباحي</h3>
+                    <p>احصل على أي مشروب ساخن + كرواسون طازج من اختيارك بسعر حصري.</p>
+                    <div class="offer-price">
+                        <span class="old-price">40 ر.س</span>
+                        <span class="new-price">28 ر.س</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">اطلب العرض الان</a>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-tag highlight">الأكثر طلباً</div>
+                    <h3>باكج الأصدقاء</h3>
+                    <p>اشتري 3 مشروبات باردة واحصل على الرابع مجاناً يوم الخميس.</p>
+                    <div class="offer-price">
+                        <span class="new-price">وفر 25%</span>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">معرفة المزيد</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section dark-bg" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">معرض الصور</span>
+                <h2 class="section-title">جولة داخل مقهانا</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="جلسات المقهى" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <p>أجواء مريحة</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="تحضير القهوة" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <p>دقة التحضير</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80" alt="الديكور الداخلي" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <p>تصميم عصري</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" alt="تفاصيل القهوة" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <p>رسم اللاتيه</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="جلسات خارجية" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <p>ركن الهادئ</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=600&q=80" alt="حلويات متنوعة" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <p>أطباق التقديم</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">آراء العملاء</span>
+                <h2 class="section-title">ماذا يقول زوارنا؟</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="comment">"مكان هادئ وراقٍ جداً، القهوة عندهم من أفضل ما ذقت في المدينة والديكور يبعث على الاسترخاء والتركيز."</p>
+                    <div class="user-info">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="سارة أحمد" loading="lazy">
+                        <div>
+                            <h5>سارة أحمد</h5>
+                            <span>عميل مستمر</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="comment">"السبانيش لاتيه ممتازة جداً والموظفين بشوشين وسريعين في الخدمة. أنصح بشدة بزيارة هذا المقهى."</p>
+                    <div class="user-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="محمد العتيبي" loading="lazy">
+                        <div>
+                            <h5>محمد العتيبي</h5>
+                            <span>ناقد طعام</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="comment">"مكان ممتاز للعمل والدراسة، الواي فاي سريع والقهوة المفلترة طازجة وتعد باحترافية."</p>
+                    <div class="user-info">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="نورة الحارثي" loading="lazy">
+                        <div>
+                            <h5>نورة الحارثي</h5>
+                            <span>مصممة جرافيك</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section dark-bg" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <span class="section-subtitle">تواصل معنا</span>
+                <h2 class="section-title">نسعد بزيارتك أو استفسارك</h2>
+                <p>سواء كنت ترغب في حجز طاولة لمناسبة خاصة أو لديك أي استفسار، فريقنا في خدمتك دائماً.</p>
+
+                <div class="info-list">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>العنوان</h4>
+                            <p>طريق الملك فهد، الرياض، المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>رقم الهاتف</h4>
+                            <p dir="ltr">+966 50 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>ساعات العمل</h4>
+                            <p>يومياً: 06:00 صباحاً - 12:00 منتصف الليل</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-box">
+                <form id="contactForm" class="contact-form">
+                    <h3>حجز طاولة / تواصل معنا</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder="الاسم الكامل">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder="البريد الإلكتروني">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" required placeholder="رقم الهاتف">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required placeholder="رسالتك أو تفاصيل الحجز..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">إرسال الطلب</button>
+                    <div id="formAlert" class="form-alert"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-mug-hot"></i> أريج <span>Café</span>
+                </a>
+                <p>مقهانا يقدم أجود أنواع القهوة المجهزة بكل حب وشغف لنضمن لك تجربة استثنائية.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#menu">قائمة الطعام</a></li>
+                    <li><a href="#gallery">معرض الصور</a></li>
+                    <li><a href="#contact">حجز طاولة</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>النشرة البريدية</h4>
+                <p>اشترك ليصلك أحدث العروض والخصومات الحصرية.</p>
+
+                <div class="newsletter-box">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني">
+                    <button type="button" class="btn btn-primary">اشتراك</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>جميع الحقوق محفوظة &copy; 2026 مقهى أريج. صُمم بحب بواسطة Front-End Developer.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="الرجوع للأعلى">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Main JavaScript File -->
+    <script src="/landing_page/coffelandingpage.js"></script>
+</body>
+</html>
